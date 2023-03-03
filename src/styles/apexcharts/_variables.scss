@@ -1,0 +1,97 @@
+@import "../core/variables";
+
+$apexchart-scrollbar-width:            .45rem !default;
+$apexchart-scrollbar-color:            $gray-400 !default;
+$apexchart-scrollbar-opacity:          .65 !default;
+$apexchart-scrollbar-border-radius:    $apexchart-scrollbar-width !default;
+
+$apexchart-toolbar-padding-y:          .25rem !default;
+$apexchart-toolbar-padding-x:          .5rem !default;
+
+$apexchart-icon-dimension:             2rem !default;
+$apexchart-icon-size:                  65% !default;
+$apexchart-icon-padding:               .125rem !default;
+$apexchart-icon-color-light:           $gray-400 !default;
+$apexchart-icon-color-dark:            $gray-400 !default;
+$apexchart-icon-hover-color-light:     $text-level-1-light !default;
+$apexchart-icon-hover-color-dark:      $text-level-1-dark !default;
+$apexchart-icon-active-color-light:    $primary !default;
+$apexchart-icon-active-color-dark:     $primary !default;
+
+$apexchart-menu-bg-light:              $dropdown-bg-light !default;
+$apexchart-menu-bg-dark:               $dropdown-bg-dark !default;
+$apexchart-menu-min-width:             $dropdown-min-width !default;
+$apexchart-menu-padding-y:             $dropdown-padding-y !default;
+$apexchart-menu-border-width:          $dropdown-border-width !default;
+$apexchart-menu-border-color-light:    $dropdown-border-color-light !default;
+$apexchart-menu-border-color-dark:     $dropdown-border-color-dark !default;
+$apexchart-menu-border-radius:         $dropdown-border-radius !default;
+$apexchart-menu-transition:            all .15s ease-in-out !default;
+
+$apexchart-menu-item-color-light:      $dropdown-item-color-light !default;
+$apexchart-menu-item-color-dark:       $dropdown-item-color-dark !default;
+$apexchart-menu-item-hover-bg-light:   $dropdown-item-hover-bg-light !default;
+$apexchart-menu-item-hover-bg-dark:    $dropdown-item-hover-bg-dark !default;
+$apexchart-menu-item-hover-color-light:$dropdown-item-hover-color-light !default;
+$apexchart-menu-item-hover-color-dark: $dropdown-item-hover-color-dark !default;
+$apexchart-menu-item-font-size:        $dropdown-item-font-size !default;
+$apexchart-menu-item-font-weight:      $dropdown-item-font-weight !default;
+$apexchart-menu-item-padding-y:        $dropdown-item-padding-y !default;
+$apexchart-menu-item-padding-x:        $dropdown-item-padding-x !default;
+
+$apexchart-tooltip-bg-light:           $popover-bg-light !default;
+$apexchart-tooltip-bg-dark:            $popover-bg-dark !default;
+$apexchart-tooltip-color-light:        $popover-body-color-light !default;
+$apexchart-tooltip-color-dark:         $popover-body-color-dark !default;
+$apexchart-tooltip-offset:             5rem !default;
+$apexchart-tooltip-border-radius:      $popover-border-radius !default;
+$apexchart-tooltip-border-width:       $tooltip-border-width !default;
+$apexchart-tooltip-border-color-light: $tooltip-border-color-light !default;
+$apexchart-tooltip-border-color-dark:  $tooltip-border-color-dark !default;
+$apexchart-tooltip-padding-y:          $tooltip-padding-y !default;
+$apexchart-tooltip-padding-x:          $tooltip-padding-x !default;
+$apexchart-tooltip-transition:         all .15s ease-in-out !default;
+
+$apexchart-tooltip-header-bg-light:    $popover-header-bg-light !default;
+$apexchart-tooltip-header-bg-dark:     $popover-header-bg-dark !default;
+$apexchart-tooltip-header-color-light: $popover-header-color-light !default;
+$apexchart-tooltip-header-color-dark:  $popover-header-color-dark !default;
+$apexchart-tooltip-header-font-size:   $popover-header-font-size !default;
+$apexchart-tooltip-header-font-weight: $font-weight-bold !default;
+$apexchart-tooltip-header-padding-y:   $popover-header-padding-y !default;
+$apexchart-tooltip-header-padding-x:   $popover-header-padding-x !default;
+
+$apexchart-tooltip-arrow-height:             $tooltip-arrow-height !default;
+$apexchart-tooltip-arrow-color-light:        $tooltip-arrow-color-light !default;
+$apexchart-tooltip-arrow-color-dark:         $tooltip-arrow-color-dark !default;
+$apexchart-tooltip-arrow-outer-color-light:  $tooltip-arrow-outer-color-light !default;
+$apexchart-tooltip-arrow-outer-color-dark:   $tooltip-arrow-outer-color-dark !default;
+
+$apexchart-tooltip-marker-dimension:   .75rem !default;
+$apexchart-tooltip-marker-spacer:      .5rem !default;
+
+$apexchart-tooltip-group-padding-y:    .5rem !default;
+$apexchart-tooltip-group-padding-x:    .75rem !default;
+
+$apexchart-tooltip-value-font-size:    $font-size-md !default;
+$apexchart-tooltip-value-font-weight:  $font-weight-bold !default;
+$apexchart-tooltip-value-spacer:       .5rem !default;
+
+$apexchart-xytooltip-bg-light:         $tooltip-bg-light !default;
+$apexchart-xytooltip-bg-dark:          $tooltip-bg-dark !default;
+$apexchart-xytooltip-color-light:      $tooltip-color-light !default;
+$apexchart-xytooltip-color-dark:       $tooltip-color-dark !default;
+$apexchart-xytooltip-font-size:        $tooltip-font-size !default;
+$apexchart-xytooltip-padding-y:        $tooltip-padding-y !default;
+$apexchart-xytooltip-padding-x:        $tooltip-padding-x !default;
+$apexchart-xytooltip-border-radius:    $tooltip-border-radius !default;
+$apexchart-xytooltip-transition:       all .15s ease-in-out !default;
+
+$apexchart-crosshair-transition:       all .15s ease-in-out !default;
+
+$apexchart-legend-padding-y:           0 !default;
+$apexchart-legend-padding-x:           1rem !default;
+$apexchart-legend-disabled-opacity:    .45 !default;
+
+$apexchart-legend-marker-spacer:       .25rem !default;
+$apexchart-marker-transition:          all .15s ease-in-out !default;

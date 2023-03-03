@@ -1,0 +1,28 @@
+@import './global.scss';
+
+.tableHeader {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.tableCell {
+  padding: 0 !important;
+  padding-left: 16px !important;
+  font-size: 14px !important;
+}
+
+.tableCellAddPermission {
+  font-size: 14px !important;
+}
+
+.noData {
+  font-size: 14px;
+  padding: 16px;
+}
+
+.loading {
+  @include loadingTable;
+}

@@ -1,0 +1,90 @@
+.text {
+  position: relative;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: 1px solid #f9fafa;
+  background-color: #eeeeee;
+  border-radius: 6px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.form {
+  background-color: white;
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.icon {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 0;
+  border-radius: 4px;
+  height: 50px;
+  border: 1px solid #c4c4c4;
+  font-size: 13px;
+  &:hover {
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+
+  input:focus {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
+  }
+}
+
+.iconList {
+  position: absolute;
+  z-index: 10;
+  width: 270px;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid black;
+  transform: translate(0, 10px);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+
+  span {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}
+
+.triangle {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid black;
+  transform: translate(30px, 1px);
+  z-index: 11;
+}
+
+.triangle:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid white;
+  transform: translate(-9px, 2px);
+}
+
+.disableInput {
+  background-color: #f0f0f0;
+}

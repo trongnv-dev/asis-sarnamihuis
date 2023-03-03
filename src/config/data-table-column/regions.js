@@ -1,0 +1,85 @@
+export const REGION_COLUMN = [
+  {
+    key: 'action',
+    code: 'column_action',
+    sortable: false,
+    visibility: true,
+    export: true,
+    label: 'action',
+  },
+  {
+    key: 'id',
+    code: 'column_id',
+    sortable: true,
+    visibility: true,
+    export: true,
+    label: 'id',
+  },
+  // {
+  //   key: 'parent_id',
+  //   code: 'column_parent_id',
+  //   sortable: true,
+  //   visibility: false,
+  //   export: true,
+  //   label: 'parentId
+  // },
+  {
+    key: 'region',
+    code: 'column_region',
+    sortable: true,
+    visibility: true,
+    export: true,
+    label: 'region',
+  },
+  {
+    key: 'is_active',
+    code: 'column_is_active',
+    sortable: false,
+    visibility: true,
+    export: true,
+    label: 'isActive',
+  },
+  {
+    key: 'sort',
+    code: 'column_sort',
+    sortable: true,
+    visibility: true,
+    export: true,
+    label: 'sort',
+  },
+];
+
+export const REGION_LABEL_COLUMN = [
+  {
+    key: 'action',
+    code: 'column_action',
+    sortable: false,
+    visibility: true,
+    export: true,
+    label: 'action',
+  },
+  {
+    key: 'name',
+    code: 'column_name',
+    sortable: true,
+    visibility: true,
+    export: true,
+    label: 'name',
+  },
+  {
+    key: 'code',
+    code: 'column_code',
+    sortable: true,
+    visibility: true,
+    export: true,
+    label: 'code',
+  },
+  {
+    key: 'sort',
+    code: 'column_sort',
+    sortable: true,
+    visibility: true,
+    export: true,
+    label: 'sort',
+  },
+];

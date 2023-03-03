@@ -1,0 +1,10 @@
+@import "../core/variables";
+
+$simplebar-width:                 1.25rem !default;
+$simplebar-padding:               .4rem !default;
+$simplebar-bg-light:              $gray-100 !default;
+$simplebar-bg-dark:               $gray-700 !default;
+$simplebar-color:                 $gray-400 !default;
+$simplebar-opacity:               .65 !default;
+$simplebar-border-radius:         $border-radius !default;
+$simplebar-transition:            opacity 0.2s linear !default;

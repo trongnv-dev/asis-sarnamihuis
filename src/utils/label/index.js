@@ -1,0 +1,11 @@
+export { getLanguageList, getLanguageLabel } from './getLanguageLabel';
+export { getCountryList, getCountryLabel } from './getCountryLabel';
+export { getRegionList, getRegionLabel } from './getRegionLabel';
+export { getPersonList, getPersonLabel } from './getPersonLabel';
+export { getUserGroupList, getUserGroupLabel } from './getUserGroupLabel';
+export { getGenderList, getGenderLabel } from './getGenderLabel';
+export { getPermissionList } from './getPermissionLabel';
+export { getPersonUploadList, getPersonUploadLabel } from './getPersonUploadLabel';
+export { getMessageList, getMessageLabel } from './getMessageLabel';
+export { getSysAttMainList, getSysAttMainLabel } from './getSysAttMainLabel';
+export { getSysAttSubList, getSysAttSubLabel } from './getSysAttSubLabel';

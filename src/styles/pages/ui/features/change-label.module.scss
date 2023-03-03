@@ -1,0 +1,21 @@
+.btnEdit {
+  display: none;
+  div {
+    div {
+      margin-right: 0px !important;
+    }
+  }
+}
+
+.text {
+  width: 100%;
+  cursor: alias;
+  &:hover {
+    color: rgb(133, 133, 238);
+  }
+}
+
+.input {
+  width: auto;
+  padding: 10px;
+}

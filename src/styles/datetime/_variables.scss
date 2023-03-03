@@ -1,0 +1,52 @@
+$datetime-width:                 19rem !default;
+$datetime-zindex:                9999 !default;
+$datetime-padding-y:             .5rem !default;
+$datetime-padding-x:             .5rem !default;
+$datetime-bg-light:              $white !default;
+$datetime-bg-dark:               $gray-800 !default;
+$datetime-border-radius:         $border-radius !default;
+$datetime-border-width:          $border-width !default;
+$datetime-border-color-light:    $border-color-light !default;
+$datetime-border-color-dark:     $border-color-dark !default;
+
+$datetime-cell-dimension:              2.5rem !default;
+$datetime-cell-border-radius:          $border-radius !default;
+$datetime-cell-hover-bg-light:         $component-hover-bg-light !default;
+$datetime-cell-hover-bg-dark:          $component-hover-bg-dark !default;
+$datetime-cell-hover-color-light:      $component-hover-color-light !default;
+$datetime-cell-hover-color-dark:       $component-hover-color-dark !default;
+$datetime-cell-today-bg-light:         rgba($primary, .1) !default;
+$datetime-cell-today-bg-dark:          rgba($primary, .1) !default;
+$datetime-cell-today-color-light:      $primary !default;
+$datetime-cell-today-color-dark:       $primary !default;
+$datetime-cell-off-color-light:        $gray-400 !default;
+$datetime-cell-off-color-dark:         $gray-400 !default;
+$datetime-cell-disabled-bg-light:      transparent !default;
+$datetime-cell-disabled-bg-dark:       transparent !default;
+$datetime-cell-disabled-color-light:   $gray-300 !default;
+$datetime-cell-disabled-color-dark:    $gray-500 !default;
+$datetime-cell-active-bg-light:        $component-active-bg-light !default;
+$datetime-cell-active-bg-dark:         $component-active-bg-dark !default;
+$datetime-cell-active-color-light:     $component-active-color-light !default;
+$datetime-cell-active-color-dark:      $component-active-color-dark !default;
+
+$datetime-block-height:                4rem !default;
+$datetime-block-hover-bg-light:        $datetime-cell-hover-bg-light !default;
+$datetime-block-hover-bg-dark:         $datetime-cell-hover-bg-dark !default;
+$datetime-block-hover-color-light:     $datetime-cell-hover-color-light !default;
+$datetime-block-hover-color-dark:      $datetime-cell-hover-color-dark !default;
+
+$datetime-arrow-dimension:             .55rem !default;
+$datetime-arrow-width:                 2px !default;
+$datetime-arrow-border-radius:         .1rem !default;
+$datetime-arrow-transition:            $transition-base !default;
+
+$datetime-counter-width:               4rem !default;
+$datetime-counter-height:              10rem !default;
+$datetime-counter-btn-height:          35% !default;
+$datetime-counter-font-size:           $font-size-lg !default;
+$datetime-counter-border-radius:       $border-radius !default;
+$datetime-counter-hover-bg-light:      $datetime-cell-hover-bg-light !default;
+$datetime-counter-hover-bg-dark:       $datetime-cell-hover-bg-dark !default;
+$datetime-counter-hover-color-light:   $datetime-cell-hover-color-light !default;
+$datetime-counter-hover-color-dark:    $datetime-cell-hover-color-dark !default;

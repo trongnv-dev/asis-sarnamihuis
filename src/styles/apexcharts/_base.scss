@@ -1,0 +1,118 @@
+// Main canvas container
+
+.apexcharts-canvas {
+  position: relative;
+  user-select: none;
+  overflow: visible;
+
+  /* scrollbar is not visible by default for legend, hence forcing the visibility */
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: $apexchart-scrollbar-width;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $apexchart-scrollbar-color;
+    opacity: $apexchart-scrollbar-opacity;
+    @include border-radius($apexchart-scrollbar-border-radius);
+  }
+}
+
+.apexcharts-svg {
+  direction: ltr;
+}
+
+.apexcharts-text tspan {
+  font-family: inherit;
+}
+
+.apexcharts-inner {
+  position: relative;
+}
+
+.legend-mouseover-inactive {
+  opacity: 0.35;
+  @include transition($apexchart-menu-transition);
+}
+
+.apexcharts-selection-rect {
+  cursor: move;
+
+  + g .svg_select_boundingRect,
+  + g .svg_select_points_rot {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  + g .svg_select_points_l,
+  + g .svg_select_points_r {
+    cursor: ew-resize;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.apexcharts-marker {
+  @include transition($apexchart-marker-transition);
+}
+
+@keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes resizeanim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.resize-triggers {
+  animation: 1ms resizeanim;
+  visibility: hidden;
+  opacity: 0;
+
+  > div {
+    overflow: auto;
+  }
+}
+
+.resize-triggers,
+.resize-triggers > div,
+.contract-trigger:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contract-trigger:before {
+  width: 200%;
+  height: 200%;
+}
+
+.svg_select_points,
+.svg_select_points_rot {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.svg_select_points_l,
+.svg_select_points_r {
+  opacity: 1;
+  fill: $gray-400;
+  visibility: visible;
+  cursor: ew-resize;
+}

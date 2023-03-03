@@ -1,0 +1,20 @@
+.widget16 {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	padding: $widget16-padding;
+	overflow: hidden;
+}
+
+.widget16-text {
+	padding: 0 $widget16-text-spacer;
+}
+
+.widget16-avatar {
+	margin: 0;
+	@include avatar-sizing($widget16-avatar-dimension, $widget16-avatar-font-size, $widget16-avatar-font-size);
+
+	.avatar-display {
+		font-weight: $widget16-avatar-font-weight;
+	}
+}

@@ -1,0 +1,39 @@
+.tableFooter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  font-size: 14px;
+
+  .lableContainer {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .label {
+    padding-right: 16px;
+  }
+  .input {
+    width: 60px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .pagination {
+    color: #757575;
+    font-size: 1rem !important;
+    font-weight: 400;
+  }
+
+  .tableMui {
+    p {
+      font-size: 14px;
+    }
+    div {
+      font-size: 14px;
+      padding-left: 5px !important;
+    }
+  }
+  
+}
+

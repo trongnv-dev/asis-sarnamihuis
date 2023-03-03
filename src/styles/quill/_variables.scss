@@ -1,0 +1,148 @@
+@import "../core/variables";
+
+$quill-font-family-monospace:      $font-family-monospace !default;
+$quill-font-family-sans-serif:     $font-family-sans-serif !default;
+$quill-font-family:                $font-family-base !default;
+$quill-font-size:                  $font-size-md !default;
+$quill-font-size-sm:               .8rem !default;
+$quill-font-size-lg:               1.6rem !default;
+$quill-font-size-xl:               2.4rem !default;
+
+$quill-link-color:                 $primary !default;
+$quill-placeholder-color-light:    $input-placeholder-color-light !default;
+$quill-placeholder-color-dark:     $input-placeholder-color-dark !default;
+
+$quill-table-border-width:         $table-border-width !default;
+$quill-table-border-color-light:   $table-border-color-light !default;
+$quill-table-border-color-dark:    $table-border-color-dark !default;
+$quill-table-cell-padding:         $table-cell-padding !default;
+
+$quill-list-spacer:                1.5em !default;
+$quill-list-margin:                .25em !default;
+$quill-list-width:                 1.25em !default;
+$quill-list-outer-width:           $quill-list-width + $quill-list-margin !default;
+$quill-list-max-indent:            9 !default;
+$quill-list-bullet-color-light:    $text-level-1-light !default;
+$quill-list-bullet-color-dark:     $text-level-1-dark !default;
+
+$quill-list-styles: (
+  decimal,
+  lower-alpha,
+  lower-roman
+) !default;
+
+$quill-blockquote-margin-y:            .5rem !default;
+$quill-blockquote-padding-left:        .75rem !default;
+$quill-blockquote-border-width:        .25rem !default;
+$quill-blockquote-border-color:        $gray-400 !default;
+
+$quill-code-block-bg:                  $gray-900 !default;
+$quill-code-block-padding-y:           .25rem !default;
+$quill-code-block-padding-x:           .5rem !default;
+$quill-code-block-margin-y:            .5rem !default;
+$quill-code-block-border-radius:       $border-radius !default;
+$quill-code-block-addon-offset:        .5rem !default;
+
+$quill-editor-line-height:                  $line-height-base !default;
+$quill-editor-padding-y:                    1rem !default;
+$quill-editor-padding-x:                    1.25rem !default;
+$quill-editor-tab-size:                     4 !default;
+$quill-editor-border-width:                 $border-width !default;
+$quill-editor-border-color-light:           $border-color-light !default;
+$quill-editor-border-color-dark:            $border-color-dark !default;
+$quill-editor-border-radius:                $border-radius-lg !default;
+
+$quill-control-dimension:                   $btn-icon-dimension !default;
+$quill-control-wide-width:                  8rem !default;
+$quill-control-padding-x:                   .5rem !default;
+$quill-control-bg-light:                    transparent !default;
+$quill-control-bg-dark:                     transparent !default;
+$quill-control-color-light:                 $text-level-1-light !default;
+$quill-control-color-dark:                  $text-level-1-dark !default;
+$quill-control-hover-bg-light:              $component-hover-bg-light !default;
+$quill-control-hover-bg-dark:               $component-hover-bg-dark !default;
+$quill-control-hover-color-light:           $component-hover-color-light !default;
+$quill-control-hover-color-dark:            $component-hover-color-dark !default;
+$quill-control-active-bg-light:             $component-active-bg-light !default;
+$quill-control-active-bg-dark:              $component-active-bg-dark !default;
+$quill-control-active-color-light:          $component-active-color-light !default;
+$quill-control-active-color-dark:           $component-active-color-dark !default;
+$quill-control-font-size:                   $btn-font-size !default;
+$quill-control-font-weight:                 $btn-font-weight !default;
+$quill-control-border-radius:               $btn-border-radius !default;
+$quill-control-spacer:                      .125rem !default;
+
+$quill-control-color-margin:                .25rem !default;
+$quill-control-color-dimension:             1.25rem !default;
+$quill-control-color-num-per-row:           8 !default;
+
+$quill-control-group-spacer:                .5rem !default;
+
+$quill-icon-size:                           60% !default;
+
+$quill-dropdown-bg-light:                   $dropdown-bg-light !default;
+$quill-dropdown-bg-dark:                    $dropdown-bg-dark !default;
+$quill-dropdown-padding-x:                  .5rem !default;
+$quill-dropdown-padding-y:                  $dropdown-padding-y !default;
+$quill-dropdown-border-width:               $dropdown-border-width !default;
+$quill-dropdown-border-color-light:         $dropdown-border-color-light !default;
+$quill-dropdown-border-color-dark:          $dropdown-border-color-dark !default;
+$quill-dropdown-border-radius:              $dropdown-border-radius !default;
+
+$quill-dropdown-item-color-light:           $dropdown-item-color-light !default;
+$quill-dropdown-item-color-dark:            $dropdown-item-color-dark !default;
+$quill-dropdown-item-hover-bg-light:        $dropdown-item-hover-bg-light !default;
+$quill-dropdown-item-hover-bg-dark:         $dropdown-item-hover-bg-dark !default;
+$quill-dropdown-item-hover-color-light:     $dropdown-item-hover-color-light !default;
+$quill-dropdown-item-hover-color-dark:      $dropdown-item-hover-color-dark !default;
+$quill-dropdown-item-padding-y:             $dropdown-item-padding-y !default;
+$quill-dropdown-item-padding-x:             $dropdown-item-padding-x !default;
+
+$quill-tooltip-bg-light:                    $tooltip-bg-light !default;
+$quill-tooltip-bg-dark:                     $tooltip-bg-dark !default;
+$quill-tooltip-color-light:                 $tooltip-color-light !default;
+$quill-tooltip-color-dark:                  $tooltip-color-dark !default;
+$quill-tooltip-content-spacer:              .5rem !default;
+$quill-tooltip-padding-y:                   .5rem !default;
+$quill-tooltip-padding-x:                   .75rem !default;
+$quill-tooltip-border-width:                $tooltip-border-width !default;
+$quill-tooltip-border-color-light:          $tooltip-border-color-light !default;
+$quill-tooltip-border-color-dark:           $tooltip-border-color-dark !default;
+$quill-tooltip-border-radius:               $tooltip-border-radius !default;
+$quill-tooltip-preview-width:               20rem !default;
+$quill-tooltip-offset:                      1rem !default;
+
+$quill-tooltip-arrow-width:                 6px !default;
+$quill-tooltip-arrow-color-light:           $gray-100 !default;
+$quill-tooltip-arrow-color-dark:            $gray-700 !default;
+
+$quill-input-width:                         15rem !default;
+$quill-input-height:                        $input-height !default;
+$quill-input-padding-y:                     $input-padding-y !default;
+$quill-input-padding-x:                     $input-padding-x !default;
+$quill-input-bg-light:                      $input-bg-light !default;
+$quill-input-bg-dark:                       $input-bg-dark !default;
+$quill-input-color-light:                   $input-color-light !default;
+$quill-input-color-dark:                    $input-color-dark !default;
+$quill-input-focus-border-color-light:      $input-focus-border-color-light !default;
+$quill-input-focus-border-color-dark:       $input-focus-border-color-dark !default;
+$quill-input-placeholder-color-light:       $input-placeholder-color-light !default;
+$quill-input-placeholder-color-dark:        $input-placeholder-color-dark !default;
+$quill-input-font-size:                     $input-font-size !default;
+$quill-input-border-width:                  $input-border-width !default;
+$quill-input-border-color-light:            $input-border-color-light !default;
+$quill-input-border-color-dark:             $input-border-color-dark !default;
+$quill-input-border-radius:                 $input-border-radius !default;
+
+$quill-snow-toolbar-padding-y:              .5rem !default;
+$quill-snow-toolbar-padding-x:              .5rem !default;
+$quill-snow-toolbar-border-width:           $border-width !default;
+$quill-snow-toolbar-border-color-light:     $border-color-light !default;
+$quill-snow-toolbar-border-color-dark:      $border-color-dark !default;
+$quill-snow-toolbar-border-radius:          $border-radius-lg !default;
+
+$quill-bubble-link-tooltip-font-size:        $font-size-md !default;
+$quill-bubble-link-tooltip-font-weight:      $font-weight-normal !default;
+$quill-bubble-link-tooltip-arrow-width:      .5rem !default;
+$quill-bubble-link-tooltip-arrow-color-light:$quill-tooltip-arrow-color-light !default;
+$quill-bubble-link-tooltip-arrow-color-dark: $quill-tooltip-arrow-color-dark !default;

@@ -1,0 +1,93 @@
+.dropdownSelect {
+  min-height: 50px;
+  width: 200px;
+  // padding: 0 10px;
+  margin-bottom: 20px;
+  font-size: 14px !important;
+
+  > div {
+    padding: 16.5px 32px 16.5px 14px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.dropdownSelectMultiple {
+  min-height: 50px;
+  width: 300px;
+  // padding: 0 10px;
+  margin-bottom: 20px;
+  font-size: 14px !important;
+
+  > div {
+    padding: 16.5px 32px 16.5px 14px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.dropdownOptions {
+  // min-width: 300px;
+  // max-height: 224px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    // padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid transparent;
+    // gap: 1px;
+    border-radius: 6px;
+    // margin-top: 10px;
+    align-items: flex-start;
+  }
+
+  li {
+    // padding: 10px;
+    padding: 6px 16px;
+    width: 100%;
+    justify-content: flex-start;
+
+    > span {
+      padding: 9px;
+    }
+
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-self: center;
+    }
+  }
+}
+
+.searchInput {
+  min-height: 50px;
+  width: 200px;
+  padding: 16px;
+  margin-bottom: 20px;
+
+  // &::placeholder {
+  //   padding-left: 10px;
+  // }
+}
+
+.tableCell {
+  padding: 0 !important;
+  padding-left: 16px !important;
+  font-size: 14px !important;
+}
+
+.checkbox {
+  padding: 9px;
+}
+
+.text {
+  font-size: 14px !important;
+  color: rgba(0, 0, 0, 0.87) !important;
+
+  > span {
+    font-size: 14px;
+  }
+}

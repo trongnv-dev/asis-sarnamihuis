@@ -1,0 +1,304 @@
+.rdt {
+  position: relative;
+}
+
+.rdtPicker {
+  display: none;
+  position: absolute;
+  min-width: $datetime-width;
+  padding: $datetime-padding-y $datetime-padding-x;
+  margin-top: $datetime-border-width;
+  z-index: $datetime-zindex !important;
+  border-width: $datetime-border-width;
+  border-style: solid;
+  @include border-radius($datetime-border-radius);
+	@include theme-variant("light") {
+		background: $datetime-bg-light;
+		border-color: $datetime-border-color-light;
+	}
+	@include theme-variant("dark") {
+		background: $datetime-bg-dark;
+		border-color: $datetime-border-color-dark;
+	}
+
+  @at-root {
+    .rdtOpen & {
+      display: block;
+    }
+
+    .rdtStatic & {
+      box-shadow: none;
+      position: static;
+    }
+  }
+
+  .rdtTimeToggle {
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    margin: 0;
+  }
+
+  td,
+  th {
+    text-align: center;
+    height: $datetime-cell-dimension;
+    @include border-radius($datetime-cell-border-radius);
+  }
+
+  td {
+    cursor: pointer;
+    
+    &.rdtDay,
+    &.rdtHour,
+    &.rdtMinute,
+    &.rdtSecond,
+    &.rdtSwitch,
+    &.rdtTimeToggle {
+      &:hover {
+        cursor: pointer;
+        @include theme-variant("light") {
+          background: $datetime-cell-hover-bg-light;
+          color: $datetime-cell-hover-color-light;
+        }
+        @include theme-variant("dark") {
+          background: $datetime-cell-hover-bg-dark;
+          color: $datetime-cell-hover-color-dark;
+        }
+      }
+    }
+
+    &.rdtOld,
+    &.rdtNew {
+      @include theme-variant("light") {
+        color: $datetime-cell-off-color-light;
+      }
+      @include theme-variant("dark") {
+        color: $datetime-cell-off-color-dark;
+      }
+    }
+    
+    &.rdtToday {
+      @include theme-variant("light") {
+        background: $datetime-cell-today-bg-light;
+        color: $datetime-cell-today-color-light;
+      }
+      @include theme-variant("dark") {
+        background: $datetime-cell-today-bg-dark;
+        color: $datetime-cell-today-color-dark;
+      }
+    }
+
+    &.rdtActive {
+      &, &:hover {
+        @include theme-variant("light") {
+          background: $datetime-cell-active-bg-light;
+          color: $datetime-cell-active-color-light;
+        }
+        @include theme-variant("dark") {
+          background: $datetime-cell-active-bg-dark;
+          color: $datetime-cell-active-color-dark;
+        }
+      }
+    }
+
+    &.rdtDisabled {
+      &, &:hover {
+        cursor: not-allowed;
+        @include theme-variant("light") {
+          background: $datetime-cell-disabled-bg-light;
+          color: $datetime-cell-disabled-color-light;
+        }
+        @include theme-variant("dark") {
+          background: $datetime-cell-disabled-bg-dark;
+          color: $datetime-cell-disabled-color-dark;
+        }
+      }
+    }
+  }
+
+  // 
+  .dow {
+    width: 14.2857%;
+    border-bottom: none;
+    cursor: default;
+  }
+
+  th {
+    &.rdtSwitch {
+      width: 100%;
+    }
+    
+    &.rdtNext,
+    &.rdtPrev {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: $datetime-cell-dimension;
+      vertical-align: top;
+
+      > span {
+        display: none !important;
+      }
+
+      &:after {
+        content: "";
+        position: relative;
+        display: inline-block;
+        color: inherit;
+        width: $datetime-arrow-dimension;
+        height: $datetime-arrow-dimension;
+        border: solid currentColor;
+        border-width: 0 $datetime-arrow-width $datetime-arrow-width 0;
+        border-bottom-right-radius: $datetime-arrow-border-radius;
+        transition: $datetime-arrow-transition;
+        transform: rotate(-45deg);
+        bottom: 1px;
+      }
+    }
+
+    &.rdtPrev:after {
+      transform: rotate(-225deg);
+      left: $datetime-arrow-width;
+    }
+
+    &.rdtDisabled {
+      &, &:hover {
+        cursor: not-allowed;
+        @include theme-variant("light") {
+          background: $datetime-cell-disabled-bg-light;
+          color: $datetime-cell-disabled-color-light;
+        }
+        @include theme-variant("dark") {
+          background: $datetime-cell-disabled-bg-dark;
+          color: $datetime-cell-disabled-color-dark;
+        }
+      }
+    }
+  }
+  
+  thead {
+    button {
+      width: 100%;
+      height: 100%;
+    }
+
+    tr:first-of-type {
+      th {
+        cursor: pointer;
+    
+        &:hover {
+          @include theme-variant("light") {
+            background: $datetime-cell-hover-bg-light;
+            color: $datetime-cell-hover-color-light;
+          }
+          @include theme-variant("dark") {
+            background: $datetime-cell-hover-bg-dark;
+            color: $datetime-cell-hover-color-dark;
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}
+
+.rdtPrev span,
+.rdtNext span {
+  display: block;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+td.rdtMonth,
+td.rdtYear {
+  width: 25%;
+  height: $datetime-block-height;
+  cursor: pointer;
+
+  &:hover {
+    @include theme-variant("light") {
+      background: $datetime-block-hover-bg-light;
+      color: $datetime-block-hover-color-light;
+    }
+    @include theme-variant("dark") {
+      background: $datetime-block-hover-bg-dark;
+      color: $datetime-block-hover-color-dark;
+    }
+  }
+}
+
+.rdtCounters {
+  display: inline-block;
+
+  > div {
+    float: left;
+  }
+}
+
+.rdtCounter {
+  width: $datetime-counter-width;
+  height: $datetime-counter-height;
+
+  .rdtBtn {
+    height: $datetime-counter-btn-height;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include border-radius($datetime-counter-border-radius);
+  
+    &:hover {
+      @include theme-variant("light") {
+        background: $datetime-counter-hover-bg-light;
+        color: $datetime-counter-hover-color-light;
+      }
+      @include theme-variant("dark") {
+        background: $datetime-counter-hover-bg-dark;
+        color: $datetime-counter-hover-color-dark;
+      }
+    }
+  }
+
+  .rdtCount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100% - ($datetime-counter-btn-height * 2);
+    font-size: $datetime-counter-font-size;
+  }
+}
+
+.rdtCounterSeparator {
+  height: $datetime-counter-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rdtMilli {
+  vertical-align: middle;
+  padding-left: 8px;
+  width: 48px;
+
+  input {
+    width: 100%;
+    font-size: 1.2em;
+    margin-top: 37px;
+  }
+}
+
+.rdtTime td {
+  cursor: default;
+}

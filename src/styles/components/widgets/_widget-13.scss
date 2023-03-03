@@ -1,0 +1,47 @@
+.widget13 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $widget13-padding-y $widget13-padding-x;
+}
+
+.widget13-avatar {
+  @include avatar-sizing($widget13-avatar-dimension, $widget13-avatar-font-size, $widget13-avatar-icon-size);
+  margin-bottom: $widget13-avatar-spacer;
+}
+
+.widget13-subtitle,
+.widget13-title {
+  padding: $widget13-content-spacer 0;
+  margin: 0;
+  text-align: center;
+}
+
+.widget13-title {
+  font-size: $widget13-title-font-size;
+  font-weight: $widget13-title-font-weight;
+  @include theme-variant("light") {
+    color: $widget13-title-color-light;
+  }
+  @include theme-variant("dark") {
+    color: $widget13-title-color-dark;
+  }
+}
+
+.widget13-subtitle {
+  font-size: $widget13-subtitle-font-size;
+  font-weight: $widget13-subtitle-font-weight;
+  @include theme-variant("light") {
+    color: $widget13-subtitle-color-light;
+  }
+  @include theme-variant("dark") {
+    color: $widget13-subtitle-color-dark;
+  }
+}
+
+.widget13-addon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

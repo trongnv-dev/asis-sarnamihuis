@@ -1,0 +1,14 @@
+.item {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  img {
+    margin-right: 10px;
+  }
+
+  span {
+    margin-right: 5px;
+  }
+}

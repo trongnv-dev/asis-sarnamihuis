@@ -1,0 +1,25 @@
+@import "../core/variables";
+
+$slick-nav-icon-size:             $btn-icon-font-size !default;
+$slick-nav-offset:                .75rem !default;
+
+$slick-nav2-height:               3.75rem !default;
+$slick-nav3-dimension:            $btn-icon-dimension !default;
+$slick-nav3-spacer:               .75rem !default;
+
+$slick-dot-dimension:             65% !default;
+$slick-dot-bg-light:              $white !default;
+$slick-dot-bg-dark:               $gray-800 !default;
+$slick-dot-offset:                $slick-nav-offset !default;
+$slick-dot-padding:               .5rem !default;
+$slick-dot-border-radius:         2rem !default;
+$slick-dot-transition:            $transition-base !default;
+
+$slick-dot-item-dimension:        1.25rem !default;
+$slick-dot-item-spacer:           .5rem !default;
+$slick-dot-item-bg-light:         $gray-300 !default;
+$slick-dot-item-bg-dark:          $gray-600 !default;
+$slick-dot-item-hover-bg-light:   $gray-400 !default;
+$slick-dot-item-hover-bg-dark:    $gray-500 !default;
+$slick-dot-item-active-bg-light:  $component-active-bg-light !default;
+$slick-dot-item-active-bg-dark:   $component-active-bg-dark !default;

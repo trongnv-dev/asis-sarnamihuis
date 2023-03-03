@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "./src/",
+    "paths": {
+      "@blueupcode/*": ["modules/*"],
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx", "src/components/UI/organisms/CustomDataTable.jsx", "src/components/UI/molecules/EditLanguageModal.jsx"]
+}
